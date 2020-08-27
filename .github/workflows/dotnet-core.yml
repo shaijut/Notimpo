@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Run App
-      run: dotnet run
+      run: dotnet run --project Notimpo
