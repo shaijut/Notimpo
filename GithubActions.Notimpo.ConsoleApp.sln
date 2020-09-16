@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubActions.Notimpo.ConsoleApp", "GithubActions.Notimpo.ConsoleApp.csproj", "{F210E9AD-ED09-4B9F-AFF5-4B41DEEC5319}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubActions.Notimpo.ConsoleApp", "src\GithubActions.Notimpo.ConsoleApp.csproj", "{F210E9AD-ED09-4B9F-AFF5-4B41DEEC5319}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
