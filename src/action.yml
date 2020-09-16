@@ -1,0 +1,47 @@
+name: Notimpo
+author: shaijut
+description:  Send important notifications via Email or SMS
+
+branding:
+  icon: message-square
+  color: purple
+
+inputs:
+  mailgun_api_key:
+    description: Mailgun API key
+    required: true
+  to:
+    description: Message to
+    required: true
+    default: ''
+  from :
+    description: Message from
+    required: true
+    default: ''
+  subject:
+    description: Message subject
+    required: true
+    default: ''
+  message:
+    description: Message content
+    required: true
+    default: ''
+  notify_type:
+    description: Type of notification
+    required: true
+    default: ''
+
+outputs:
+  message:
+    description: Message sent to Recepient
+
+runs:
+  using: docker
+  image: Dockerfile
+  env:
+    MAILGUN_API_KEY : ${{ inputs.mailgun_api_key }}
+    TO: ${{ inputs.to }}
+    FROM: ${{ inputs.from }}
+    SUBJECT: ${{ inputs.subject }}
+    MESSAGE: ${{ inputs.message }}
+    NOTIFY_TYPE : ${{ inputs.notify_type }}
